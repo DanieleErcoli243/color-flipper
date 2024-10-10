@@ -11,6 +11,8 @@ const color = document.querySelector('.color');
 
 // aggancio un ascoltatore di eventi al bottone
 btn.addEventListener('click', () => {
-    document.body.style.backgroundColor = colors[getRandomNumber(min, max)];
-    color.innerText = colors[getRandomNumber(min, max)];
+    const randomNumber = getRandomNumber(min, max);
+    document.body.style.backgroundColor = colors[randomNumber];
+    console.log(document.body.style.backgroundColor);
+    color.innerText = colors[randomNumber];
 })
