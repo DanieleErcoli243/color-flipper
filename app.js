@@ -11,9 +11,10 @@ const color = document.querySelector('.color');
 
 // aggancio un ascoltatore di eventi al bottone
 btn.addEventListener('click', () => {
+    // genero un numero casuale contenuto tra gli indici dell'array
     const randomNumber = getRandomNumber(min, max);
-    console.log(randomNumber);
+    // modifico il colore di sfondo del body usando lo style
     document.body.style.backgroundColor = colors[randomNumber];
-    console.log(document.body.style.backgroundColor);
+    // cambio il nome del colore scritto nello span 
     color.innerText = colors[randomNumber];
 })
