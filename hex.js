@@ -6,5 +6,6 @@ const color = document.querySelector('.color');
 
 // aggancio un ascoltatore di eventi al bottone
 btn.addEventListener('click', () => {
-
+    // dichiaro una variabile di partenza con la stringa del codice colore
+    let hexColor = '#';
 })
