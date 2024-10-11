@@ -14,5 +14,9 @@ btn.addEventListener('click', () => {
     for (let i = 0; i < 6; i++) {
         hexColor += hex[getRandomNumber()];
     };
+    // modifico il colore di sfondo del body usando lo style
+    document.body.style.backgroundColor = hexColor;
+    // cambio il nome del colore scritto nello span 
+    color.innerText = hexColor;
 
 })
